@@ -22,7 +22,7 @@ function proxy(req, res) {
 }
 
 
-app.use(express.static(__dirname + '/static'));
+app.use(express.static(__dirname + '/public'));
 app.get('/', home);
 app.get('/Northwind/*', proxy);
 app.listen(port);
